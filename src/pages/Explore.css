@@ -1,0 +1,126 @@
+.explore-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.explore-title {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* font-style: italic; */
+  font-family: ui-monospace;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #1111b9;
+}
+
+.explore-subtitle {
+  font-size: 36px;
+  font-style: oblique;
+  font-family: ui-monospace;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px; /* I added*/
+}
+
+.halls-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.hall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hall-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.hall-details {
+  padding: 15px;
+  text-align: left;
+}
+
+.hall-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.hall-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.hall-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.reserve-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+  background-color: darkblue;
+}
+
+.search-filter-home {
+  /* position: absolute; */
+  top: 25px;
+  right: 12px;
+}
+
+.search-filter-home {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* right: 0; */
+  /* left: 0; */
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.search-txt {
+  border: none;
+  padding: 7px;
+  background: #0d6efd;
+  color: white;
+}
+
+.navbar-search input {
+  padding: 5px;
+  border-radius: unset;
+  transition: 0.5s;
+  background-color: rgb(249, 251, 251);
+  border-right: none !important;
+  border: 1px solid gray;
+}
+
+.search-txt {
+  padding: 7px;
+}

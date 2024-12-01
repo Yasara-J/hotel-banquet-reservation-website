@@ -1,0 +1,25 @@
+.reservationupdate-form-container {
+  min-width: 800px;
+  margin: 20px auto;
+  /* margin-top: 80px; */
+  padding: 20px;
+  padding-top: 90px;
+  background-color: #ebebeb;
+  /* border: 1px solid #6b90be; */
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /* overflow-y: auto; */
+  /* height: 90vh; */
+  /* box-sizing: border-box; */
+}
+
+.button-wrapper-update {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 32px;
+}
+
+.updateSuccess {
+  height: 67vh;
+}

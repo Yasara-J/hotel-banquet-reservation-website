@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 0.1rem; /* Reduced padding for a smaller height */
+  background-color: white; /* Changed background color to white */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow for a clean look */
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-logo img {
+  width: 60px; /* Adjusted image size to fit the reduced height */
+  margin-right: 1px;
+}
+
+.navbar-links a {
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color:#1e1e49; /* Changed text color to navy blue */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-links a:hover {
+  color: skyblue; /* Hover color changed to sky blue */
+}
+
+
+
+.logo-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 20px; /* Adjusted font size */
+  color: #1e1e49; 
+}

@@ -1,0 +1,99 @@
+.fixed-footer {
+  background: #f8f9fa;
+  padding: 10px 0;
+  color: #333;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 100px;
+  margin: 10px 5px;
+}
+
+.footer-logo-section {
+  text-align: left;
+}
+
+.footer-logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.footer-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #060e36;
+}
+
+.footer-description {
+  font-size: 12px;
+  color: #606060;
+  margin: 10px 0;
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #060e36;
+}
+
+.footer-links, .contact-details {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li, .contact-details li {
+  margin: 8px 0;
+}
+
+.footer-links a, .contact-details li {
+  font-size: 15px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover, .contact-details li:hover {
+  color: rgb(15, 75, 98);
+}
+
+.social-media-icons {
+  margin-top: 10px;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  color: #1e1e49;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-top: 5px; /* To add spacing between icons */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  transform: scale(1.2);
+  color: skyblue;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    margin: 20px 0;
+  }
+}
+

@@ -1,0 +1,222 @@
+.home-image-container {
+  background-image: url('../assets/images/Home1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  margin-bottom: 60px;
+  animation: zoomInOut 10s ease-in-out infinite; /* Added infinite zoom-in and zoom-out animation */
+}
+
+/* Keyframe animation for zoom-in and zoom-out effect */
+@keyframes zoomInOut {
+  0% {
+    background-size: 100%; /* Initial size */
+  }
+  50% {
+    background-size: 110%; /* Zoom in */
+  }
+  100% {
+    background-size: 100%; /* Zoom out to initial size */
+  }
+}
+
+.image-bottom-text {
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: ui-monospace;
+  color: rgb(10, 11, 11);
+}
+
+.home-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.home-content h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.padding {
+  padding: 100px 80px;
+  margin: 0 auto;
+  width: 98%;
+  max-width: 1560px;
+}
+.home-text {
+  
+  padding: 20px 40px; /* Adds some spacing around the text */
+  border-radius: 8px; /* Rounded corners for a smoother look */
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+.home-text h1, .home-text h2 {
+  margin: 0; /* Removes extra spacing around the headings */
+}
+
+.hall-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.our-halls-txt {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: ui-monospace;
+  font-weight: 700;
+}
+
+.hall-img {
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
+}
+
+.img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 10px;
+}
+
+.viewMore-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 40px;
+  background: #ddc7a6;
+  font-family: Helvetica Neue;
+  font-weight: 500;
+}
+
+.hero-title {
+  font-family: auto;
+  font-size: 54px;
+  color: beige;
+  font-weight: 700;
+}
+
+.hotel-description {
+  font-size: 16px;
+  font-family: helavetica;
+  text-align: center;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 103vh;
+  display: flex;/* Center slide text vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+video.video {
+height:97vh;
+}
+
+/*text banner styling*/
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+.banner {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  color: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.banner h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 1rem;
+}
+
+.banner:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .banner-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/*img banner styling*/
+.image-banner-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between banners */
+  padding: 40px;
+}
+
+.image-banner {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures the border radius is applied to the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-banner:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+@media (max-width: 768px) {
+  .image-banner-list {
+    padding: 20px;
+  }
+}
+
+

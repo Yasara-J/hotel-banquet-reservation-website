@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.services-container {
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background for contrast */
+  text-align: center;
+}
+
+.card-row {
+  display: flex; /* Use flexbox for a horizontal layout */
+  justify-content: space-between; /* Space between cards */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensure rounded corners */
+  flex: 0 0 300px; /* Fixed width for each card */
+  transition: transform 0.3s; /* Transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.card-images {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+}
+
+.card-images img {
+  width: 100%;
+  height: 150px; /* Fixed height for images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #1e1e49; /* Darker color for titles */
+}
+
+.card-content p {
+  margin-bottom: 10px;
+  color: #333; /* Darker color for text */
+}
+
+
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .services-container {
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+
+  .card-content h2 {
+    font-size: 20px; /* Smaller heading on mobile */
+  }
+
+  .card-content p {
+    font-size: 14px; /* Smaller paragraph text on mobile */
+  }
+
+  .card-row {
+    flex-wrap: nowrap; /* Keep cards in a single row on mobile */
+  }
+
+  .card {
+    flex: 0 0 250px; /* Adjust card width for mobile */
+  }
+}

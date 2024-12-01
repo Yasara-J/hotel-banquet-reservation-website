@@ -1,0 +1,66 @@
+.view-header-txt {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* font-style: italic; */
+  font-family: ui-monospace;
+  font-weight: 700;
+  padding: 30px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.update-btn {
+  padding: 2px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: #ffc107b8;
+}
+
+.delete-btn {
+  padding: 2px 16px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background: #c60707c4;
+}
+
+.modal.show .modal-dialog {
+  transform: none;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.delete-modal-txt {
+  font-size: 21px;
+  margin-bottom: 0px;
+  font-weight: normal !important;
+  font-family: helavetica;
+  /* font-size: xx-large; */
+}
+
+.modal-title {
+  margin-bottom: 0;
+  line-height: var(--bs-modal-title-line-height);
+  font-weight: bold;
+}

@@ -1,0 +1,121 @@
+/* Main Container Styling */
+main {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .TitleBar {
+    background-color: #1e1e49; 
+    color: #ffffff; 
+    padding: 25px 40px;
+    text-align: center;
+    border-radius: 8px; 
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .TitleBar-text {
+    font-size: 32px; 
+    font-weight: 700; 
+    letter-spacing: 1px; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .TitleBar {
+      padding: 20px;
+    }
+  
+    .TitleBar-text {
+      font-size: 24px; 
+    }
+  }
+  
+  /* Section Titles */
+  h4 {
+    color: #333333;
+    margin-bottom: 15px;
+  }
+  
+  /* Cards Layout and Styling */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+  
+  .card h3 {
+    font-size: 32px;
+    color: #1e1e49;
+    margin-bottom: 10px;
+  }
+  
+  .card strong {
+    font-size: 18px;
+    color: #555555;
+  }
+
+  .report-container{
+  padding: 20px;
+  background-color: #f1f4f8;
+  border-radius: 10px;
+}
+  
+  /* Row Layout */
+ .row1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .col1 {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  /* Buttons */
+  button.btn-secondary {
+    background-color: #1e1e49;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-secondary:hover {
+    background-color: #1e1e49;
+  }
+
+  .btn-primary {
+    background-color: #1e1e49;
+    border-color: #4a90e2;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .btn-danger {
+    background-color: #d9534f;
+    border-color: #d9534f;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  /* Reservations Chart Section */
+  canvas {
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
